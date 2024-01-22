@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.powerpump.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_signup"
+            app:destination="@id/signup" />
+        <action
+            android:id="@+id/action_login_to_loginin"
+            app:destination="@id/loginin" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.powerpump.signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signup_to_home2"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginin"
+        android:name="com.example.powerpump.loginin"
+        android:label="fragment_loginin"
+        tools:layout="@layout/fragment_loginin" >
+        <action
+            android:id="@+id/action_loginin_to_home2"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.powerpump.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_gym"
+            app:destination="@id/gym" />
+        <action
+            android:id="@+id/action_home2_to_homeWorkout"
+            app:destination="@id/homeWorkout" />
+        <action
+            android:id="@+id/action_home2_to_conditie"
+            app:destination="@id/conditie" />
+        <action
+            android:id="@+id/action_homepage_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/gym"
+        android:name="com.example.powerpump.Gym"
+        android:label="fragment_gym"
+        tools:layout="@layout/fragment_gym" />
+    <fragment
+        android:id="@+id/homeWorkout"
+        android:name="com.example.powerpump.HomeWorkout"
+        android:label="fragment_home_workout"
+        tools:layout="@layout/fragment_home_workout" />
+    <fragment
+        android:id="@+id/conditie"
+        android:name="com.example.powerpump.Conditie"
+        android:label="fragment_conditie"
+        tools:layout="@layout/fragment_conditie" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.powerpump.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
