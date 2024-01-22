@@ -57,7 +57,11 @@
         android:id="@+id/gym"
         android:name="com.example.powerpump.Gym"
         android:label="fragment_gym"
-        tools:layout="@layout/fragment_gym" />
+        tools:layout="@layout/fragment_gym" >
+        <action
+            android:id="@+id/action_gym_to_gymweek1"
+            app:destination="@id/gymweek1" />
+    </fragment>
     <fragment
         android:id="@+id/homeWorkout"
         android:name="com.example.powerpump.HomeWorkout"
@@ -73,4 +77,9 @@
         android:name="com.example.powerpump.Settings"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/gymweek1"
+        android:name="com.example.powerpump.gymweek1"
+        android:label="fragment_gymweek1"
+        tools:layout="@layout/fragment_gymweek1" />
 </navigation>
