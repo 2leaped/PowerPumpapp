@@ -9,6 +9,7 @@
     tools:context=".gymweek1" >
 
     <TextView
+<<<<<<< HEAD
         android:id="@+id/textView24"
         android:layout_width="247dp"
         android:layout_height="34dp"
@@ -29,6 +30,8 @@
         tools:layout_editor_absoluteY="448dp" />
 
     <TextView
+=======
+>>>>>>> origin/weeks
         android:id="@+id/textView10"
         android:layout_width="122dp"
         android:layout_height="34dp"
@@ -37,22 +40,34 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171" />
+=======
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.165" />
+>>>>>>> origin/weeks
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="190dp"
         android:layout_height="36dp"
+<<<<<<< HEAD
         android:layout_marginStart="20dp"
+=======
+        android:layout_marginStart="16dp"
+>>>>>>> origin/weeks
         android:text="3x5 shoulderpress"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.243" />
 
     <TextView
@@ -84,15 +99,35 @@
         android:textSize="20sp"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="404dp" />
+=======
+        app:layout_constraintVertical_bias="0.24" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="122dp"
+        android:layout_height="34dp"
+        android:text="3x5 shoulderpress"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        tools:layout_editor_absoluteY="336dp" />
+>>>>>>> origin/weeks
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="122dp"
         android:layout_height="34dp"
+<<<<<<< HEAD
         android:text="3x5 leg press"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="20dp"
+=======
+        android:text="3x5 push ups"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+>>>>>>> origin/weeks
         tools:layout_editor_absoluteY="276dp" />
 
     <TextView
@@ -104,12 +139,17 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         tools:layout_editor_absoluteY="193dp" />
+=======
+        tools:layout_editor_absoluteY="191dp" />
+>>>>>>> origin/weeks
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="182dp"
         android:layout_height="30dp"
+<<<<<<< HEAD
         android:text="3x5 hammer curls"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
@@ -133,5 +173,13 @@
         android:text="next week"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="554dp" />
+=======
+        android:layout_marginEnd="20dp"
+        android:text="3x5 hammer curls"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        tools:layout_editor_absoluteY="237dp" />
+>>>>>>> origin/weeks
 
 </androidx.constraintlayout.widget.ConstraintLayout>
