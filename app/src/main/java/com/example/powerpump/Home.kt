@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -46,7 +47,9 @@ class Home : Fragment() {
         view.findViewById<Button>(R.id.btnConditie).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_home2_to_conditie)
         }
-        
+        view.findViewById<ImageButton>(R.id.btnSettings).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_homepage_to_settings)
+        }
         return view
     }
 

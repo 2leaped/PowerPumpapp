@@ -32,7 +32,7 @@
         android:label="fragment_loginin"
         tools:layout="@layout/fragment_loginin" >
         <action
-            android:id="@+id/action_loginin_to_home2"
+            android:id="@+id/action_loginin_to_homepage"
             app:destination="@id/homepage" />
     </fragment>
     <fragment
@@ -72,5 +72,9 @@
         android:id="@+id/settings"
         android:name="com.example.powerpump.Settings"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
 </navigation>

@@ -63,10 +63,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.658" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/btnSettings"
-        android:layout_width="39dp"
-        android:layout_height="34dp"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
         android:src="@drawable/settings"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

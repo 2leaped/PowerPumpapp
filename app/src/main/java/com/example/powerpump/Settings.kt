@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,9 +36,12 @@ class Settings : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        val view = inflater.inflate(R.layout.fragment_settings, container, false)
+        view.findViewById<Button>(R.id.btnSaveSet).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_settings_to_homepage)
+        }
+        return view
     }
-
     companion object {
         /**
          * Use this factory method to create a new instance of
