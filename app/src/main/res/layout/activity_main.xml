@@ -20,14 +20,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/navigation" />
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="316dp"
-        android:layout_height="127dp"
-        android:text="Gym wallpaper phone brunette pose glutes"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="664dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
