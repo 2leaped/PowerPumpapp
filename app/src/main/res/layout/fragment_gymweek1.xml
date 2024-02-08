@@ -8,278 +8,220 @@
     android:background="@drawable/wallpaperandroidstudioppf"
     tools:context=".gymweek1" >
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="247dp"
-        android:layout_height="34dp"
-        android:text="3x5 back"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="412dp"
+        android:layout_height="730dp"
+        android:background="#74000000"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="247dp"
-        android:layout_height="34dp"
-        android:text="3x5 chest"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="247dp"
+            android:layout_height="34dp"
+            android:text="3x5 chest"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="474dp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="122dp"
-        android:layout_height="34dp"
-        android:text="3x5 push ups"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154" />
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="96dp" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="190dp"
-        android:layout_height="36dp"
-        android:text="3x5 shoulderpress"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="367dp" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="247dp"
-        android:layout_height="34dp"
-        android:text="3x5 calves"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="319dp" />
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="247dp"
-        android:layout_height="34dp"
-        android:text="3x5 sit-ups"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="247dp"
+            android:layout_height="34dp"
+            android:text="3x5 squads"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="426dp" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="247dp"
-        android:layout_height="34dp"
-        android:text="3x5 squads"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.132"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62" />
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="193dp" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="122dp"
-        android:layout_height="34dp"
-        android:text="3x5 leg press"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="247dp"
+            android:layout_height="34dp"
+            android:text="3x5 back"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="520dp" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="202dp"
-        android:layout_height="32dp"
-        android:text="3x5 bicep curls"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.286" />
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="282dp" />
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="182dp"
-        android:layout_height="30dp"
-        android:text="3x5 hammer curls"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        <CheckBox
+            android:id="@+id/checkBox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="472dp" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="276dp"
-        android:layout_height="35dp"
-        android:text="Week 1"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="145dp" />
 
-    <Button
-        android:id="@+id/btnWeek2gym"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next week"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="122dp"
+            android:layout_height="34dp"
+            android:text="3x5 push ups"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.147" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="202dp"
+            android:layout_height="32dp"
+            android:text="3x5 bicep curls"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.276" />
 
-    <CheckBox
-        android:id="@+id/checkBox7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.14" />
+        <CheckBox
+            android:id="@+id/checkBox13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="520dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.552" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="247dp"
+            android:layout_height="34dp"
+            android:text="3x5 calves"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="21dp"
+            tools:layout_editor_absoluteY="330dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.623" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="182dp"
+            android:layout_height="30dp"
+            android:text="3x5 hammer curls"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.338" />
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        <Button
+            android:id="@+id/btnWeek2gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next week"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="646dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.282" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="122dp"
+            android:layout_height="34dp"
+            android:text="3x5 leg press"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.395" />
 
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.347" />
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="252dp"
+            android:layout_height="35dp"
+            android:text="Week 1"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            tools:layout_editor_absoluteX="159dp"
+            tools:layout_editor_absoluteY="40dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.412" />
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="237dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.694" />
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="415dp" />
 
-    <CheckBox
-        android:id="@+id/checkBox13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="247dp"
+            android:layout_height="34dp"
+            android:text="3x5 sit-ups"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="22dp"
+            tools:layout_editor_absoluteY="378dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="190dp"
+            android:layout_height="36dp"
+            android:text="3x5 shoulderpress"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.208" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
