@@ -1,12 +1,18 @@
 package com.example.powerpump
 
+import android.R
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.telephony.TelephonyManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.core.content.ContextCompat.getSystemService
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,12 +40,43 @@ class gymweek1 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_gymweek1, container, false)
-        view.findViewById<Button>(R.id.btnWeek2gym).setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gym2week)
+    ): View? {    private var context:Context? = ContextHolder.instance.appContext
+
+        fun writeFileOnInternalStorage(fileKey: String, sBody: String) {
+            val file = File(context?.filesDir, "files")
+            try {
+                if (!file.exists()) {
+                    file.mkdir()
+                }
+                val fileToWrite = File(file, fileKey)
+                val writer = FileWriter(fileToWrite)
+                writer.append(sBody)
+                writer.flush()
+                writer.close()
+            } catch (e: Exception) {
+                Logger.e(classTag, e)
+            }
+        }
+
+        fun readFileOnInternalStorage(fileKey: String): String {
+            val file = File(context?.filesDir, "files")
+            var ret = ""
+            try {
+                if (!file.exists()) {
+                    return ret
+                }
+                val fileToRead = File(file, fileKey)
+                val reader = FileReader(fileToRead)
+                ret = reader.readText()
+                reader.close()
+            } catch (e: Exception) {
+                Logger.e(classTag, e)
+            }
+            return ret
+        }
         }
         return view
     }
 }
+
+
