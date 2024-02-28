@@ -1,17 +1,14 @@
 package com.example.powerpump
 
-import android.R
+import android.content.Context
 import android.os.Bundle
-import android.telephony.TelephonyManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -29,6 +26,7 @@ class gymweek1 : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -40,43 +38,26 @@ class gymweek1 : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {    private var context:Context? = ContextHolder.instance.appContext
+    ): View? {
 
-        fun writeFileOnInternalStorage(fileKey: String, sBody: String) {
-            val file = File(context?.filesDir, "files")
-            try {
-                if (!file.exists()) {
-                    file.mkdir()
-                }
-                val fileToWrite = File(file, fileKey)
-                val writer = FileWriter(fileToWrite)
-                writer.append(sBody)
-                writer.flush()
-                writer.close()
-            } catch (e: Exception) {
-                Logger.e(classTag, e)
-            }
-        }
 
-        fun readFileOnInternalStorage(fileKey: String): String {
-            val file = File(context?.filesDir, "files")
-            var ret = ""
-            try {
-                if (!file.exists()) {
-                    return ret
-                }
-                val fileToRead = File(file, fileKey)
-                val reader = FileReader(fileToRead)
-                ret = reader.readText()
-                reader.close()
-            } catch (e: Exception) {
-                Logger.e(classTag, e)
-            }
-            return ret
-        }
-        }
+
         return view
+        }
+
+    }
+
+fun writeTextToFile(filename: String?, data: String) {
+    val file = File("checkBox")
+    try {
+        val stream = FileOutputStream(file)
+        stream.write(data.toByteArray())
+        stream.close()
+    } catch (e: IOException) {
+        e.printStackTrace()
     }
 }
+
+
 
 
