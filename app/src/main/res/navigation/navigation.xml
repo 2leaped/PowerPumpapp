@@ -83,11 +83,11 @@
         android:label="fragment_gymweek1"
         tools:layout="@layout/fragment_gymweek1" >
         <action
-            android:id="@+id/action_gymweek1_to_gym2week"
-            app:destination="@id/gym2week" />
+            android:id="@+id/action_gymweek1_to_gymweek2"
+            app:destination="@id/gymweek2" />
     </fragment>
     <fragment
-        android:id="@+id/gym2week"
+        android:id="@+id/gymweek2"
         android:name="com.example.powerpump.gymweek2"
         android:label="fragment_gymweek2"
         tools:layout="@layout/fragment_gymweek2" />
