@@ -43,10 +43,10 @@ class gymweek1 : Fragment() {
     ): View? {
 
         val view = inflater.inflate(R.layout.fragment_gymweek1, container, false)
-        view.findViewById<Button>(R.id.btnWeek2gym).setOnClickListener{
+
+        view.findViewById<Button>(R.id.btnWeek2gym2).setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gymweek2)
         }
-        val view = inflater.inflate(R.layout.fragment_gymweek2, container, false)
         return view
         }
 

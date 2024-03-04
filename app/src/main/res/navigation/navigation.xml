@@ -90,5 +90,9 @@
         android:id="@+id/gymweek2"
         android:name="com.example.powerpump.gymweek2"
         android:label="fragment_gymweek2"
-        tools:layout="@layout/fragment_gymweek2" />
+        tools:layout="@layout/fragment_gymweek2" >
+        <action
+            android:id="@+id/action_gymweek2_to_gymweek1"
+            app:destination="@id/gymweek1" />
+    </fragment>
 </navigation>
