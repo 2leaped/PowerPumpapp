@@ -4,22 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wallpaper"
+    android:background="@drawable/wallpaperandroidstudioppf"
     tools:context=".Home">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="185dp"
-        android:layout_height="166dp"
-        android:src="@drawable/mountain_health___fitness_logo__"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnHomeworkout"
@@ -49,6 +37,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.503" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="185dp"
+        android:layout_height="166dp"
+        android:src="@drawable/mountain_health___fitness_logo__"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
         android:id="@+id/btnConditie"
         android:layout_width="159dp"
@@ -65,14 +65,14 @@
 
     <ImageButton
         android:id="@+id/btnSettings"
-        android:layout_width="66dp"
-        android:layout_height="57dp"
-        android:src="@drawable/settings"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/settingsbtnimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.954"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
