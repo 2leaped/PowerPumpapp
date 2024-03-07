@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.CheckBox
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import java.io.File
+import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
 
@@ -47,9 +49,18 @@ class gymweek1 : Fragment() {
         view.findViewById<Button>(R.id.btnWeek2gym2).setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gymweek2)
         }
+
+        view.findViewById<CheckBox>(R.id.checkBox7).setOnClickListener {
+            writeTextToFile("opslag", "1")
+         }
         return view
         }
-
+        val path = context.filesDir()
+        val letDirectory = File(path, "LET")
+        val LetDirectory.mkdirs()
+        val file = File(letDirectory, "Records.txt")
+        file.appendText("")
+        val inputAsString = FileInputStream(file).bufferedReader().use { readLine() }
     }
 
 fun writeTextToFile(filename: String?, data: String) {
