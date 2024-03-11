@@ -15,10 +15,26 @@
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="0dp">
 
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="88dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#000000"
+            android:rotation="180"
+            android:scaleType="fitXY"
+            android:src="@drawable/pngegg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
+
         <Button
             android:id="@+id/btnprev2week1gym"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6200ED"
             android:text="previous week"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

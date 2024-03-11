@@ -46,34 +46,39 @@ class gymweek1 : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_gymweek1, container, false)
 
-        view.findViewById<Button>(R.id.btnWeek2gym2).setOnClickListener{
+        view.findViewById<Button>(R.id.btnWeek2gym2).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gymweek2)
         }
 
         view.findViewById<CheckBox>(R.id.checkBox7).setOnClickListener {
             writeTextToFile("opslag", "1")
-         }
-        return view
         }
-        val path = context.filesDir()
-        val letDirectory = File(path, "LET")
-        val LetDirectory.mkdirs()
-        val file = File(letDirectory, "Records.txt")
-        file.appendText("")
-        val inputAsString = FileInputStream(file).bufferedReader().use { readLine() }
+
+
+        val path = this.context?.filesDir
+        val file = File(path, "Records.txt",)
+        file.createNewFile()
+        file.writeText("hoi")
+        var x = file.readText()
+
+        //val inputAsString = FileInputStream(file).bufferedReader().use { readLine() }
+
+
+        return view
     }
 
-fun writeTextToFile(filename: String?, data: String) {
-    val file = File("checkBox")
-    try {
-        val stream = FileOutputStream(file)
-        stream.write(data.toByteArray())
-        stream.close()
-    } catch (e: IOException) {
-        e.printStackTrace()
+
+    fun writeTextToFile(filename: String?, data: String) {
+        val file = File("checkBox")
+        try {
+            val stream = FileOutputStream(file)
+            stream.write(data.toByteArray())
+            stream.close()
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
     }
 }
-
 
 
 
