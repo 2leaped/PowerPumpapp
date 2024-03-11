@@ -67,6 +67,7 @@
         android:id="@+id/btnSettings"
         android:layout_width="65dp"
         android:layout_height="62dp"
+        android:backgroundTint="#000000"
         android:scaleType="fitXY"
         android:src="@drawable/settingsbtnicon"
         app:layout_constraintBottom_toBottomOf="parent"
