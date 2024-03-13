@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,6 +40,9 @@ class gymweek2 : Fragment() {
         val view = inflater.inflate(R.layout.fragment_gymweek2, container, false)
         view.findViewById<Button>(R.id.btnprev2week1gym).setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_gymweek2_to_gymweek1)
+        }
+        view.findViewById<ImageButton>(R.id.btnPijltjeweek2naargym).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_gymweek2_to_gym)
         }
         return view
     }

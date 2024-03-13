@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import java.io.File
@@ -49,7 +50,12 @@ class gymweek1 : Fragment() {
         view.findViewById<Button>(R.id.btnWeek2gym2).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gymweek2)
         }
-
+        view.findViewById<ImageButton>(R.id.btnpijltjenaargym).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gym)
+        }
+        view.findViewById<ImageButton>(R.id.btnpijltjenaargym).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_gymweek1_to_gym)
+        }
         view.findViewById<CheckBox>(R.id.checkBox7).setOnClickListener {
             writeTextToFile("opslag", "1")
         }

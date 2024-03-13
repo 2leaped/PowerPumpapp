@@ -40,6 +40,9 @@ class Gym : Fragment() {
         view.findViewById<Button>(R.id.week1Gym).setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_gym_to_gymweek1)
         }
+        view.findViewById<Button>(R.id.week2Gym).setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_gym_to_gymweek2)
+        }
         return view
     }
 

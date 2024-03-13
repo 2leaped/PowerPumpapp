@@ -61,6 +61,9 @@
         <action
             android:id="@+id/action_gym_to_gymweek1"
             app:destination="@id/gymweek1" />
+        <action
+            android:id="@+id/action_gym_to_gymweek2"
+            app:destination="@id/gymweek2" />
     </fragment>
     <fragment
         android:id="@+id/homeWorkout"
@@ -85,6 +88,9 @@
         <action
             android:id="@+id/action_gymweek1_to_gymweek2"
             app:destination="@id/gymweek2" />
+        <action
+            android:id="@+id/action_gymweek1_to_gym"
+            app:destination="@id/gym" />
     </fragment>
     <fragment
         android:id="@+id/gymweek2"
@@ -94,5 +100,8 @@
         <action
             android:id="@+id/action_gymweek2_to_gymweek1"
             app:destination="@id/gymweek1" />
+        <action
+            android:id="@+id/action_gymweek2_to_gym"
+            app:destination="@id/gym" />
     </fragment>
 </navigation>
